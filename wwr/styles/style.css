@@ -34,7 +34,7 @@ main section img {
 
 body{
     background-color: #cfcac7;
-    font-family: 'Lato, sans-serif';
+    font-family: 'Lato', Arial, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -84,7 +84,7 @@ nav a:hover{
 }
 
 .home-title{
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
     color: white;
     font-size: 2em;
     margin-top: 10px;
@@ -95,7 +95,7 @@ h4{
 }
 
 .msg h2 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
     color: white;
 }
 
