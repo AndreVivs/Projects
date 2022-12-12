@@ -90,7 +90,10 @@ footer p a:hover {
     text-decoration: underline;
 }
 
-
+hr {
+    color: black;
+    size: 2px;
+  }
 
 
 
