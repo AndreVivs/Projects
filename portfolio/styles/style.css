@@ -1,8 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Manrope:wght@300&display=swap');
 
-#content {
+:root {
+    --h-font: 'Cinzel', Helvetica, serif;
+    --p-font: 'Manrope', Helvetica, sans-serif;
+
+    --color1: #000000   ;
+    --color2: #959EA9 ;
+    --accent1: #D9D9D9;
+    --accent2: #956D80;
+    --accent3: #918A8A;
+}
+
+
+body {
     max-width: 1600px;
     margin: 0 auto;
+    background-color: var(--accent1);
+    font-weight: bold;
+    font-size: 21px;
 }
 
 body {
@@ -10,8 +25,8 @@ body {
 }
 
 header {
-    background-color: #000000;
-    color: white;
+    background-color: var(--color1);
+    color: var(--accent1);
     padding: 0 50px;
     display: flex;
     height: 15%;
@@ -26,10 +41,11 @@ nav {
 nav a {
     text-align: center;
     justify-content: end;
-    color: white;
+    color: var(--accent1);
     text-decoration: none;
     padding: 30px;
     margin: 0 2%;
+    font-family: var(--p-font);
 }
 
 .logo {
@@ -38,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #959EA9;
+    background-color: var(--color2);
     color: white;
 }
 
@@ -50,17 +66,16 @@ nav a:hover {
 }
 
 footer {
-    background-color: #000000;
-    color: white;
+    background-color: var(--color1);
     padding: 15px 50px;
-    margin-top: 200px;
+    margin-top: 140px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 footer a {
-    color: white;
+    color: var(--accent1);
     text-decoration: none;
     padding: 30px;
 }
@@ -84,6 +99,7 @@ footer a:hover {
 
 footer p {
     font-size: 1.2em;
+    color: var(--accent1);
 }
 
 footer p a:hover {
@@ -91,26 +107,104 @@ footer p a:hover {
 }
 
 hr {
-    color: black;
-    size: 2px;
-  }
+    height: 2px;
+    background: var(--accent2);
+}
 
+a:link {
+    text-decoration: none;
+}
+
+h1 h2 h3 h4 {
+    font-family: 'Cinzel', Helvetica, serif;
+}
+
+p {
+    font-family: 'Manrope', Helvetica, sans-serif;
+    color: var(--accent2);
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    padding: 25px;
+}
+
+.home a h3 {
+    margin-top: 30%;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--color1);
+}
+
+.home-img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.home-container p {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.home-line {
+    width: 40%;
+}
+
+.break {
+    display: flex;
+    margin: 40px;
+}
+
+.break p {
+    margin-top: 0;
+}
+
+.card-container {
+    display: flex;
+    margin: 4%;
+    align-items: center;
+}
+
+.project-description {
+    width: 85%;
+}
+
+.project-card {
+    width: 30%;
+    margin: 2% 3%;
+}
+
+.project-image img {
+    width: 370px;
+    margin: 0 auto;
+    border-radius: 5%;
+}
 
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid, .rivers-grid-rigth, .rivers-grid {
+    .card-container {
         display: block;
         height: auto;
+        margin: 5% 20%;
     }
-    #hero {
-        margin-top: 0;
+
+    .project-description {
+        width: 300px;
     }
-    #hero-msg {
-        margin-top: 0;
+    
+    .project-card {
+        width: 30%;
+        margin: 20% 3%;
     }
-    #hero-msg h4 {
-        display: none;
+    
+    .project-image img {
+        width: 300px;
+        margin: 0 auto;
     }
+
     nav, footer {
         flex-direction: column;
     }
@@ -118,21 +212,9 @@ hr {
         display: block;
         padding: 15px;
     }
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
+
     #background {
         display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
     }
     footer {
         margin-top: 25px;
