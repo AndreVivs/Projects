@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang=”en”>
-        
+<html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="shortcut icon" href="images/logos/andrea-r-cut.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
         <title>Andrea Ramos | Portfolio</title>
     </head>
     
@@ -35,73 +36,103 @@
         </header>
         <main>
             <div class="about-container">
-                <div>
-                    <h1>ABOUT</h1>
-                    <p>
-                        I’m a front-end developer with a free sould based in Mexico
-                        Since 2021, I've enjoyed designing interfaces,creating, building solving logic,
-                        learning new technologies and growing in the process. When I'm not coding,
-                        you'll find me walking through the city, playing with my pets, dancing,
-                        working out in the gym, spending time with my love people or trying something new.
-                    </p>
-                    <img class="generic-size" src="images/aboutme/san-miguel.jpeg" alt="Andy San Miguel">
+                <div class="about">
+                    <div>
+                        <h2>ABOUT</h2>
+                        <p>
+                            I’m a front-end developer with a free sould based in Mexico
+                            Since 2021, I've enjoyed designing interfaces,creating, building solving logic,
+                            learning new technologies and growing in the process. When I'm not coding,
+                            you'll find me walking through the city, playing with my pets, dancing,
+                            working out in the gym, spending time with my love people or trying something new.
+                        </p>
+                    </div>
+                    <img src="images/aboutme/san-miguel.jpeg" alt="Andy San Miguel">
                 </div>
 
-                <hr>
+                <hr class="hr-about">
 
-                <div>
-                    <img class="generic-size" src="images/aboutme/me.jpeg" alt="Andy">
-                    <img class="generic-size" src="images/aboutme/laia-vale.jpeg" alt="Laia and Valentina">
+                <div class="about-img">
                     <img class="generic-size" src="images/aboutme/viajecito.jpeg" alt="Travel with Friends">
-                    <img class="generic-size" src="images/aboutme/trabajando.jpeg" alt="Working">
-                    <img class="generic-size" src="images/aboutme/reforma.jpeg" alt="Reforma">
-                    <img class="generic-size" src="images/aboutme/museo.jpeg" alt="Musement">
                     <img class="generic-size" src="images/aboutme/gym.jpeg" alt="Gym">
-                    <img class="generic-size" src="images/aboutme/caminata.jpeg" alt="Walking">
+                    <img class="generic-size" src="images/aboutme/trabajando.jpeg" alt="Working">
+                    <img class="generic-size" src="images/aboutme/museo.jpeg" alt="Musement">
                     <img class="generic-size" src="images/aboutme/concierto-1.jpeg" alt="Concert">
                 </div>
             </div>
             <hr>
-            <div class="skills-container">
-                <h3>SKILLS</h3>
-                <div>
-                    <h4>HARD SKILLS</h4>
-                    <ul>
-                    <li>JavaScript</li>
-                    <li>HTML/CSS</li>
-                    <li>React JS</li>
-                    <li>Storybook</li>
-                    <li>PrimeReact</li>
-                    <li>Figma</li>
-                    <li>Firebase</li>
-                    <li>NodeJS</li>
-                    <li>Git/GitHub</li>
-                    <li>Agile Methodology</li>        
-                    </ul>
-                </div>
 
-                <div>
-                    <h4>SOFT SKILLS</h4>
-                    <ul>
-                    <li>Self-learning</li>
-                    <li>Proactivity</li>
-                    <li>Teamwork</li>
-                    <li>Solution oriented</li>
-                    <li>Organized</li>
-                    <li>Effective Communication</li>       
-                    </ul>
+            <div class="skills-container">
+                <h2>SKILLS</h2>
+                <div class="skills">
+                    <div>
+                        <h3>HARD SKILLS</h3>
+                        <ul>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                        <li>React JS</li>
+                        <li>Storybook</li>
+                        <li>PrimeReact</li>
+                        <li>Figma</li>
+                        <li>Firebase</li>
+                        <li>NodeJS</li>
+                        <li>Git/GitHub</li>
+                        <li>Agile Methodology</li>        
+                        </ul>
+                    </div>
+
+                    <canvas id="myChart"></canvas>
+
+                    <script>
+                        var xValues = ["CODER", "DESIGNER", "IMPROVING MY DESIGNE SKILLS", "ENJOY THE MOMENT"];
+                        var yValues = [30, 20, 15, 35];
+                        var barColors = [
+                        "#3D3D3D",
+                        "#B295A1",
+                        "#B8B8B8",
+                        "#788391"
+                        ];
+
+                        new Chart("myChart", {
+                        type: "doughnut",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                            backgroundColor: barColors,
+                            data: yValues
+                            }]
+                        },
+                        options: {
+                            title: {
+                            display: true,
+                            text: "DESIGNER OR CODER?"
+                            }
+                        }
+                        });
+                    </script>
+
+                    <div>
+                        <h3>SOFT SKILLS</h3>
+                        <ul>
+                        <li>Self-learning</li>
+                        <li>Proactivity</li>
+                        <li>Teamwork</li>
+                        <li>Solution oriented</li>
+                        <li>Organized</li>
+                        <li>Effective Communication</li>       
+                        </ul>
+                    </div>
                 </div>
             </div>
             <hr>
             <div class="random-facts-container">
-                <h3>RANDOM FACTS</h3>
-                <div>
-                    <img class="generic-size" src="images/aboutme/trabajando.jpeg" alt="Working">
-                    <img class="generic-size" src="images/aboutme/caminata.jpeg" alt="Go for a Walk">
-                    <img class="generic-size" src="images/aboutme/reforma.jpeg" alt="Reforma">
+                <div class="facts-img">
+                    <img class="facts-img1" src="images/aboutme/laia-vale.jpeg" alt="Working">
+                    <img class="facts-img2" src="images/aboutme/reforma.jpeg" alt="Reforma">
+                    <img class="facts-img3" src="images/aboutme/caminata.jpeg" alt="Go for a Walk">
                 </div>
                 <div>
-                    <h4>RANDOM FACTS</h4>
+                    <h2>RANDOM FACTS</h2>
                     <ul>
                     <li>I drink a lot of tea and I love the ones with dehydrated fruit (the guava punch is one of my favorites).</li>
                     <li>I was born with the rhythm to dance and feel integrated.</li>
@@ -116,29 +147,31 @@
             </div>
             <hr>
             <div class="my-story-container">
-                <h3>MY STORY</h3>
-                <p>
-                    Okay, find a comfortable place and a drink. For some people, it is easy to find their vocation for others
-                    not as much as was my case, so I think that if something calls you with all your strength you should always
-                    choose to do it regardless of the opinions of others in the end if you are wrong it will be an experience
-                    but if you will not know to search and find your passion and your happiness.
-
-                    The truth is that I wanted to study dance, languages and music but solving problems, the exact sciences
-                    and helping nature have always caught my attention, so after a talk with my mother I ended up applying
-                    to the university. She wanted me to study a less artistic career and said that if I didn't stay,
-                    she would let me do what I wanted but mothers always know something else so I entered industrial chemical engineering
-                    with a speciality in the environment but I couldn't leave the artistic part so I continued dancing and studying.
-                    While the semesters of the degree passed, I came across a subject where I learned Matlab and programming came into my life.
-                    Almost all the guys I took that subject with already had experience and I knew the class was in Spanish but
-                    I had no idea what they were talking about so even though I studied I failed :) but I tried it again and discovered
-                    that it was something that I liked like that I decided to change careers where I could combine my creative and logical side,
-                    after a programming Bootcamp I started my career at Brigham Young University - Idaho in applied technology,
-                    so here we are, learning, growing and enjoying the journey.
-                </p>
                 <div>
-                    <img class="generic-size" src="images/aboutme/escritorio.jpg" alt="Work Place">
-                    <img class="generic-size" src="images/aboutme/work-place.jpg" alt="Work Place">
-                    <img class="generic-size" src="images/aboutme/talent-fest.jpg" alt="Talent Fest">
+                    <h2>MY STORY</h2>
+                    <p>
+                        Okay, find a comfortable place and a drink. For some people, it is easy to find their vocation for others
+                        not as much as was my case, so I think that if something calls you with all your strength you should always
+                        choose to do it regardless of the opinions of others in the end if you are wrong it will be an experience
+                        but if you will not know to search and find your passion and your happiness.
+                    </p>
+                    <p>
+                        The truth is that I wanted to study dance, languages and music but solving problems, the exact sciences
+                        and helping nature have always caught my attention, so after a talk with my mother I ended up applying
+                        to the university. She wanted me to study a less artistic career and said that if I didn't stay,
+                        she would let me do what I wanted but mothers always know something else so I entered industrial chemical engineering
+                        with a speciality in the environment but I couldn't leave the artistic part so I continued dancing and studying.
+                        While the semesters of the degree passed, I came across a subject where I learned Matlab and programming came into my life.
+                        Almost all the guys I took that subject with already had experience and I knew the class was in Spanish but
+                        I had no idea what they were talking about so even though I studied I failed :) but I tried it again and discovered
+                        that it was something that I liked like that I decided to change careers where I could combine my creative and logical side,
+                        after a programming Bootcamp I started my career at Brigham Young University - Idaho in applied technology,
+                        so here we are, learning, growing and enjoying the journey.
+                    </p>
+                </div>
+                <div class="history-img">
+                    <img class="work-place" src="images/aboutme/work-place.jpg" alt="Work Place">
+                    <img class="labo" src="images/aboutme/talent-fest.jpg" alt="Talent Fest">
                 </div>
             </div>
         </main>
