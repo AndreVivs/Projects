@@ -68,7 +68,6 @@ nav a:hover {
 footer {
     background-color: var(--color1);
     padding: 15px 50px;
-    margin-top: 140px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -119,70 +118,62 @@ h1, h2, h3, h4 {
     font-family: 'Cinzel', Helvetica, serif;
 }
 
+h2, h3 {
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
 p {
     font-family: 'Manrope', Helvetica, sans-serif;
-    color: var(--accent2);
 }
 
-.home {
-    display: grid;
-    grid-template-columns: 35% 30% 35%;
-    padding: 25px;
+.parallax {
+    min-height: 10%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.home a h3 {
-    margin-top: 30%;
-    text-align: center;
-    font-size: 1.2em;
-    color: var(--color1);
+#img1 {
+    background-image: url("../images/blog/netflix1.jpg");
 }
 
-.home-img {
-    margin: 0 auto;
+#img2 {
+    background-image: url("../images/blog/abstract.jpg");
+}
+
+#img3 {
+    background-image: url("../images/blog/the-toys.jpg");
+}
+
+#img4 {
+    background-image: url("../images/blog/the-creative-brain.jfif");
+}
+
+#img5 {
+    background-image: url("../images/blog/pixar-story.jfif");
+}
+
+#img6 {
+    background-image: url("../images/blog/minimalism.jpg");
+}
+
+.scroll-up {
+    height:5%;
+    background-color: var(--accent2);
+    font-size:23px;
+    padding: 30px 60px;
+}
+
+.scroll-container {
     width: 100%;
-    height: auto;
+    height: 7000px;
+    scroll-behavior: auto;
 }
-
-.home-container p {
-    text-align: center;
-    margin: 20px;
-    font-size: 1.2em;
-}
-
-.home-line {
-    width: 40%;
-}
-
-.break {
-    display: flex;
-    margin: 40px;
-}
-
-.break p {
-    margin-top: 0;
-}
-
-.card-container {
-    display: flex;
-    margin: 4%;
-    align-items: center;
-}
-
-.project-description {
-    width: 85%;
-}
-
-.project-card {
-    width: 30%;
-    margin: 2% 3%;
-}
-
-.project-image img {
-    width: 370px;
-    margin: 0 auto;
-    border-radius: 5%;
-}
-
 
 @media screen and (max-width: 900px) {
     .card-container {
