@@ -4,6 +4,9 @@
 ### 12 / 14 / 2022
 
 
+![](https://andrevivs.github.io/Projects/portfolio/index.html)
+
+
 ### OBJECTIVE
 
 The objective of creating this website is to implement and share my future and current projects, sharing a part of myself through this site. This could help other developers to get ideas, the general public to learn how the programation is applied in actuality and the recruiters in search of new talent that matches my skills :) also with businesses that want to obtain my services to grow up their brands and also publish content in my blog obtaining feedback and helping others share my knowledge.
