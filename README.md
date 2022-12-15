@@ -17,9 +17,50 @@ The crowd is all the developers that want to discover new projects, recruiters t
 
 ### TECHNOLOGIC SOLUTION
 
-![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/wireframes/about-siteplan-wireframe.png)
+First of all I determine the objective, audience, designe the logo, the branding, choose the style guide with the color palete and the typography.
 
+purpose audience branding
+![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/readme/propouse-audience-branding.png)
+
+style guide
+![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/readme/color-typography.png)
+
+
+Then I searched different portfolios of developers to find inspiration to designe the wireframes of each page, collected images, created text understandable and focoused in the audience.
+
+
+HOME PAGE
+
+wireframe home page
 ![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/wireframes/home-siteplan-wireframe.png)
 
+home page content
+![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/readme/home-page-content.png)
+
+home page site
+![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/readme/home-page.png)
+
+
+ABOUT PAGE
+
+wireframe about page
+![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/wireframes/about-siteplan-wireframe.png)
+
+about page content
+![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/readme/about-page-content.png)
+
+about page site
+![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/readme/about-page.png)
+
+
+PORTFOLIO PAGE
+
+wireframe portfolio page
 ![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/wireframes/portfolio-siteplan-wireframe.png)
+
+portfolio page content
+![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/readme/portfolio-page-content.png)
+
+portfolio page site
+![](https://github.com/AndreVivs/Projects/blob/develop/portfolio/images/readme/portfolio-page.png)
 
