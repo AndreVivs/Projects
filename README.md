@@ -1,7 +1,7 @@
 # Web Site Portfolio Andy
-# Andrea Ramos
-# WDD 130
-# 12 / 14 / 2022
+### Andrea Ramos
+### WDD 130
+### 12 / 14 / 2022
 
 
 ### OBJECTIVE
