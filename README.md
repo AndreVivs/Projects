@@ -4,8 +4,6 @@
 ### 12 / 14 / 2022
 
 
-![](https://andrevivs.github.io/Projects/portfolio/index.html)
-
 
 ### OBJECTIVE
 
@@ -71,3 +69,8 @@ Before completing this project I learned that it's so important to create first 
 I learned that is important to take in mind the acceptance criteria and create the wireframes and the content by the hand of the requirements because if we have a mistake, detecting and changing it will be faster.
 
 All the organization, knowledge and the structure to follow a plan for a site step by step will help me in the future with new prjects, and take in mind the importance of HTML and CSS. Also motivated me to learn more about the design because I need to confess that was a good course to me.
+
+
+
+We share with you the link if you want to visit it : https://andrevivs.github.io/Projects/portfolio/index.html
+
